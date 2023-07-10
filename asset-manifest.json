@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cogo-homepage/static/css/main.f30cd01e.css",
+    "main.css": "/cogo-homepage/static/css/main.6fa576b0.css",
     "main.js": "/cogo-homepage/static/js/main.e91705b7.js",
     "static/media/updated_gif_1.webm": "/cogo-homepage/static/media/updated_gif_1.2376100d268804280f10.webm",
     "static/media/updated_gif_2.webm": "/cogo-homepage/static/media/updated_gif_2.a7c5affde5a6b2dfe28f.webm",
@@ -28,11 +28,11 @@
     "static/media/bhilosa_logo.webp": "/cogo-homepage/static/media/bhilosa_logo.57bac499312305b367d2.webp",
     "static/media/globe.webp": "/cogo-homepage/static/media/globe.7de5590406d02bd76270.webp",
     "index.html": "/cogo-homepage/index.html",
-    "main.f30cd01e.css.map": "/cogo-homepage/static/css/main.f30cd01e.css.map",
+    "main.6fa576b0.css.map": "/cogo-homepage/static/css/main.6fa576b0.css.map",
     "main.e91705b7.js.map": "/cogo-homepage/static/js/main.e91705b7.js.map"
   },
   "entrypoints": [
-    "static/css/main.f30cd01e.css",
+    "static/css/main.6fa576b0.css",
     "static/js/main.e91705b7.js"
   ]
 }
