@@ -576,7 +576,10 @@
     width: 1168px;
 
     padding: 16px;
-    margin: 50px auto 0 auto;
+    /* margin: 50px auto 0 auto; */
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
 
     height: 580px;
     display: flex;
