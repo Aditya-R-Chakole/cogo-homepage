@@ -1,0 +1,144 @@
+.howItWorks .container{
+    width: 1168px;
+    height: 765px;
+    position: relative;
+    margin: 52.5px auto 0 auto;
+    padding: 16px;
+}
+
+.howItWorks .container .laptop{
+    position: absolute;
+    top: 262.5px;
+    left: 324px;
+    width: 520px;
+}
+
+.howItWorks .container .arrow1{
+    position: absolute;
+    width: 150px;
+    left: 324px;
+    top: 222.5px;
+}
+
+.howItWorks .container .arrow3{
+    position: absolute;
+    width: 150px;
+    left: 694px;
+    top: 222.5px;
+}
+
+.howItWorks .container .arrow2{
+    position: absolute;
+    width: 150px;
+    left: 324px;
+    top: 527.5px;
+}
+
+.howItWorks .container .arrow4{
+    position: absolute;
+    width: 150px;
+    left: 694px;
+    top: 527.5px;
+}
+
+.howItWorks .container h3{
+    position: absolute;
+    left: 495.5px;
+    font-size: 28px;
+    margin-bottom: 28px;
+    line-height: 1.2;
+}
+
+.howItWorks .container .buttons{
+    position: absolute;
+    top: 79px;
+    left: 344px;
+}
+
+.howItWorks .container .buttons button{
+    font-family: 'PT Sans', sans-serif;
+    width: 200px;
+    height: 40px;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.2;
+    border-radius: 20px;
+    border: 0;
+    margin: 0 20px;
+}
+
+.howItWorks .container .buttons button:hover{
+    cursor: pointer;
+}
+
+.active{
+    background-color: rgb(251, 220, 0);
+    transition: ease 0.25s;   
+} 
+
+.howItWorks .container .left{
+    position: absolute;
+    height: 605px;
+    top: 120px;
+    left: 23px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.howItWorks .container .right{
+    position: absolute;
+    height: 605px;
+    top: 120px;
+    left: 845px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media(max-width: 750px){
+    .howItWorks .container{
+        width: 92%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 30px auto 30px auto;
+    }
+    .howItWorks .container h3{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .howItWorks .container .buttons{
+        height: 112px;
+        display: flex;
+        flex-direction: column;
+    }
+    .howItWorks .container .buttons button{
+        margin: 0 20px 16px 20px;
+    }
+    .howItWorks .container .laptop{
+        margin-top: 10px;
+        order: 0;
+    }
+    .howItWorks .container .left, .howItWorks .container .right{
+        width: 100%;
+        row-gap: 20px;
+        order: 1;
+        margin-top: 20px;
+        height: 100%;
+    }
+    .howItWorks .container .laptop, .howItWorks .container .left, .howItWorks .container .right, .howItWorks .container h3, .howItWorks .container .buttons{
+        position: static;
+    }
+    .howItWorks .container .laptop{
+        width: 280px;
+    }
+    .howItWorks .container .arrow1, .arrow2, .arrow3, .arrow4{
+        display: none;
+    } 
+}

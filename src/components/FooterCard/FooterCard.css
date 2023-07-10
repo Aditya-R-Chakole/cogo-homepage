@@ -1,0 +1,48 @@
+.footerCard{
+    width: 188px;
+}
+
+.footerCard .title{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+    text-decoration: underline 1px;
+}
+
+.footerCard p{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 8px 0;
+    padding: 8px 0;
+}
+
+.footerCard h4{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 14px;
+}
+
+.footerCard .section span a{
+    font-family: 'PT Sans', sans-serif !important;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    margin: 8px 0;
+}
+
+.footerCard a{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footerCard .section{
+    margin: 8px 0;
+}
+
+.footerCard p:hover, .footerCard span:hover{
+    cursor: pointer;
+    text-decoration: underline 1px;
+}
