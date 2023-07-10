@@ -62,6 +62,11 @@ function App() {
     let homeBannerVid  = [homeBannerVid1, homeBannerVid2, homeBannerVid3];
     let homeBannerVidM = [homeBannerVid4, homeBannerVid5, homeBannerVid6];
 
+    function helper(num){
+        let size = num.length;
+        return (size>3)?(num.slice(0, size-3) + "," + num.slice(size-3)):(num);
+    }
+
     useEffect(() => {
         setTimeout(() => {
             setCountriesServed((countriesServed) => (Math.min(countriesServed+3, maxCountriesServed)));
@@ -162,10 +167,10 @@ function App() {
             {/* InfoCards */}
             <div className='infoBar'>
                 <span>
-                    <InfoCard quantity={String(countriesServed)+"+"} remark={"Countries Served"} />
-                    <InfoCard quantity={String(portsPairsServed)} remark={"Ports Pairs Served"} />
-                    <InfoCard quantity={String(tonsOfAirCargoMoved)+"+"} remark={"Tons of Air Cargo Moved"} />
-                    <InfoCard quantity={String(containersMoved)} remark={"Containers Moved"} />
+                    <InfoCard quantity={helper(String(countriesServed))+"+"} remark={"Countries Served"} />
+                    <InfoCard quantity={helper(String(portsPairsServed))} remark={"Ports Pairs Served"} />
+                    <InfoCard quantity={helper(String(tonsOfAirCargoMoved))+"+"} remark={"Tons of Air Cargo Moved"} />
+                    <InfoCard quantity={helper(String(containersMoved))} remark={"Containers Moved"} />
                 </span>
             </div>
 
