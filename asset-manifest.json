@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/cogo-homepage/static/css/main.f30cd01e.css",
+    "main.js": "/cogo-homepage/static/js/main.e91705b7.js",
+    "static/media/updated_gif_1.webm": "/cogo-homepage/static/media/updated_gif_1.2376100d268804280f10.webm",
+    "static/media/updated_gif_2.webm": "/cogo-homepage/static/media/updated_gif_2.a7c5affde5a6b2dfe28f.webm",
+    "static/media/updated_gif_3.webm": "/cogo-homepage/static/media/updated_gif_3.4c96c5f59bc2c44464da.webm",
+    "static/media/cogoverse_mobile_1.webm": "/cogo-homepage/static/media/cogoverse_mobile_1.aedea2805baf6b332f99.webm",
+    "static/media/video.png": "/cogo-homepage/static/media/video.8157f14247563270b938.png",
+    "static/media/blog1.png": "/cogo-homepage/static/media/blog1.6c91e30c1ee38da57da5.png",
+    "static/media/blog0.png": "/cogo-homepage/static/media/blog0.f1147adc06788d774640.png",
+    "static/media/homepagem2.png": "/cogo-homepage/static/media/homepagem2.4afb970e977b6878f882.png",
+    "static/media/blog2.png": "/cogo-homepage/static/media/blog2.433ee007eeae7a31247f.png",
+    "static/media/cogoport-subscribe.png": "/cogo-homepage/static/media/cogoport-subscribe.f3c41bdbb8620d5c1c72.png",
+    "static/media/map-supply-chain.webp": "/cogo-homepage/static/media/map-supply-chain.50c0ca4f64c1094f977e.webp",
+    "static/media/trade-tech-home.webp": "/cogo-homepage/static/media/trade-tech-home.83d0dcf48ccfc2938889.webp",
+    "static/media/electronics.svg": "/cogo-homepage/static/media/electronics.aa9a70b67f2a95e1cac2a9a8784cd9e4.svg",
+    "static/media/homepagem1.webp": "/cogo-homepage/static/media/homepagem1.82bd5626eb989cc21ef4.webp",
+    "static/media/manufactoring.svg": "/cogo-homepage/static/media/manufactoring.39e9a655d6dfeb108ea4ac79f205a16b.svg",
+    "static/media/ais-logo.webp": "/cogo-homepage/static/media/ais-logo.f6979d3598e73d1f5c47.webp",
+    "static/media/air-asia-logo.webp": "/cogo-homepage/static/media/air-asia-logo.b96d8d0e64bfbe99942e.webp",
+    "static/media/textiles.svg": "/cogo-homepage/static/media/textiles.312f151f8bc1a5fa7025c33d605871d2.svg",
+    "static/media/paracetamol.svg": "/cogo-homepage/static/media/paracetamol.4618d2e6a687435ff46041c672bbfeb6.svg",
+    "static/media/voltas-logo.webp": "/cogo-homepage/static/media/voltas-logo.eea82394369022577a67.webp",
+    "static/media/chemical.svg": "/cogo-homepage/static/media/chemical.7960f8d42d7445754df7e611d9131e6d.svg",
+    "static/media/whitegoods.svg": "/cogo-homepage/static/media/whitegoods.bcbfd6b100773112bdfdca74f7a031e7.svg",
+    "static/media/agriculture.svg": "/cogo-homepage/static/media/agriculture.5c4f8d9cce4650c6c2c5af36a6b55867.svg",
+    "static/media/bhilosa_logo.webp": "/cogo-homepage/static/media/bhilosa_logo.57bac499312305b367d2.webp",
+    "static/media/globe.webp": "/cogo-homepage/static/media/globe.7de5590406d02bd76270.webp",
+    "index.html": "/cogo-homepage/index.html",
+    "main.f30cd01e.css.map": "/cogo-homepage/static/css/main.f30cd01e.css.map",
+    "main.e91705b7.js.map": "/cogo-homepage/static/js/main.e91705b7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f30cd01e.css",
+    "static/js/main.e91705b7.js"
+  ]
+}
