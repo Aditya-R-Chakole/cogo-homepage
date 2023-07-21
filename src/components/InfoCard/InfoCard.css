@@ -22,7 +22,7 @@
 
 @media(max-width: 750px){
     .infoCard{
-        min-width: 200px;
+        min-width: 45%;
     }
     .infoCard h2{
         font-size: 24px;

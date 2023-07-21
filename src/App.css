@@ -1,13 +1,60 @@
 *{
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
-
     scrollbar-width: none;
+}
+
+.app{
+    display: grid;
+}
+
+/* Offer Section */
+.offerSection{
+    width: 100%;
+    height: 36px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #ee3425;
+
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.offerSection .left{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.offerSection .left img{
+    width: 16px;
+    height: 16px;
+    margin-left: 4%;
+}
+
+.offerSection span{
+    color: #fbdc00;
+}
+
+.offerSection span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.offerSection svg{
+    width: 20px;
+    height: 20px;
+    margin-right: 4%;
+}
+.offerSection svg:hover{
+    cursor: pointer;
 }
 
 /* NavBar */
 .navBar{
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0; 
 
@@ -15,7 +62,7 @@
     align-items: center;
     width: 100%;
     height: 40px;
-    padding: 8px 16px;
+    padding: 8px 0;
     background-color: #fff;
 
     z-index: 2;
@@ -109,7 +156,7 @@
     align-items: center;
     justify-content: space-between;
     margin: 16px auto;
-    padding: 57px 16px 0 16px;
+    padding: 57px 0 0 0;
 }
 
 .header .left h1{
@@ -245,7 +292,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 16px;
+    padding: 16px 0;
 }
 
 .tagline span .left, .tagline span .right{
@@ -277,7 +324,7 @@
 
 .ourProducts span{
     width: 1168px;
-    padding: 16px;
+    padding: 16px 0;
     margin: 0 auto;
 
     display: flex;
@@ -314,36 +361,60 @@
 
 /* Trusted Partners */
 .trustedPartners{
-    font-size: 28px;
-    line-height: 1.2;
-    background-color: white;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 35px 0 3.5em 0;
+    display: block;
+    margin-bottom: 50px;
 }
 
 .trustedPartners h3{
-    margin-bottom: 1em;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 30px;
 }
 
-.trustedPartners div{
+.trustedPartners .companyName{
+    display: block;
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.trustedPartners .companyName .animation{
     display: flex;
-    flex-wrap: nowrap;
+
+    animation-name: animator;
+    animation-duration: 32s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+} 
+@keyframes animator {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+.trustedPartners .companyName .animation .company{
+    display: flex;
+    flex-direction: row;
     flex-shrink: 0;
-
-    animation: trustedPartener 2.5s infinite linear;
+    gap: 0.1rem;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 100%;
 }
 
-.trustedPartners div img{
+.trustedPartners .companyName .animation .company img{
     width: 146px;
-    margin: 0 40px;
-}
-
-@keyframes trustedPartener {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-250px); }
+    height: 73px;
+    margin-right: 40px;
+    margin-left: 40px;
+    color:transparent;
 }
 
 /* Ready to take your Supply Chain to the Next Level */
@@ -406,10 +477,7 @@
 .industriesServed span{
     width: 1168px;
     min-height: 243px;
-    /* height: 275px; */
-
     margin: 0 auto;
-
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -468,7 +536,7 @@
 }
 
 .getStartedToday span h2{
-    width: 500px;
+    width: 100%;
     font-size: 40px;
     font-weight: 700;
 }
@@ -481,7 +549,8 @@
 }
 
 .getStartedToday span img{
-    width: 280px;
+    width: 100%;
+    max-width: 280px;
     animation: getStartedTodayY 2s infinite  alternate-reverse;
 }
 
@@ -512,7 +581,8 @@
 }
 
 .displayVideo img{
-    height: 450px;
+    aspect-ratio: auto 280/360;
+    width: 100%;
 }
 
 .displayVideo img:hover{
@@ -529,7 +599,7 @@
     width: 1168px;
     height: 135px;
 
-    padding: 16px;
+    padding: 16px 0;
     margin: 0 auto;
     color: #fff;
 
@@ -541,12 +611,14 @@
 .growFaster span div h3{
     font-size: 28px;
     line-height: 1.2;
+    margin-left: 16px;
     margin-bottom: 10px;
 }
 
 .growFaster span div p{
     font-size: 16px;
     line-height: 1.2;
+    margin-left: 16px;
     margin-bottom: 10px;
 }
 
@@ -558,6 +630,7 @@
     font-size: 14px;
     font-weight: 700;
     padding: 4px 16px;
+    margin-left: 16px;
     background-color: #fbdc00;
     color: #000;
     border: 0;
@@ -575,8 +648,7 @@
 .blog .container{
     width: 1168px;
 
-    padding: 16px;
-    /* margin: 50px auto 0 auto; */
+    padding: 16px 0;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -858,6 +930,7 @@
         align-items: center;
         column-gap: 16px;
         padding-left: 0;
+        margin-left: 16px;
     }
     .navBar .left .menuButton{
         display: block;
@@ -882,11 +955,14 @@
         height: 56px;
     }
     .tagline span{
-        width: 93%;
+        width: 100%;
         flex-direction: column-reverse;
     }
     .tagline span .right img{
         width: 320px;
+    }
+    .tagline span .left{
+        margin-left: 16px;
     }
     .tagline span .left h2{
         font-size: 24px;
@@ -895,16 +971,17 @@
 
     /* Our Products */
     .ourProducts span{
-        width: 95%;
+        width: 100%;
         align-items: start;
     }
     .ourProducts h3{
         font-size: 20px;
         line-height: 1.2;
-        margin: 0;
+        margin-left: 16px;
     }
     .ourProducts .product .left{
         font-size: 16px;
+        margin-left: 16px;
     }
     .ourProducts .product{
         flex-direction: column;
@@ -916,10 +993,14 @@
         justify-content: center;
     }
 
+    /* trustedPartners */
+    .trustedPartners h3{
+        font-size: 20px;
+    }
+
     /* Next Level */
     .nextLevel span{
         width: 92.5%;
-        height: 100%;
         flex-direction: column;
         align-items: start;
         justify-content: space-around;
@@ -941,7 +1022,7 @@
         max-width: 495px;
         width: 95%;
         height: 100%;
-        padding: 50px 16px 25px 16px;
+        padding: 50px 0 25px 0;
         flex-direction: column-reverse;
     }
 
@@ -960,6 +1041,7 @@
     }
 
     .growFaster span{
+        width: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: start;
@@ -982,11 +1064,9 @@
 
     .blog .container .tray{
         flex-direction: column;
-        justify-content: space-around;
-        width: 92.5%;
+        row-gap: 15px;
+        width: 95%;
         height: 1380px;
-
-        margin-left: -25px;
     }
     .footer .boxCurve{
         width: 100%;
@@ -1044,4 +1124,3 @@
         width: 105px;
     }
 }
-

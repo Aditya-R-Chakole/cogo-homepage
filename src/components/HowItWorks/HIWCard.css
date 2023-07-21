@@ -1,7 +1,7 @@
 .hiw-card{
     width: 268px;
     height: 230px;
-    padding: 16px;
+    padding: 16px 0 16px 16px;
     border-radius: 10px;
     background-color: white;
     border: 1.5px solid transparent;
@@ -52,7 +52,8 @@
 
 @media(max-width: 750px){
     .hiw-card{
-        width: 92.5%;
+        width: 93%;
+        margin-left: 1.5%;
     }
     .hiw-card .div span{
         font-family: 'PT Sans', sans-serif !important;
